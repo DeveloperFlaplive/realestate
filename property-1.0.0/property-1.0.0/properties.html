@@ -10,7 +10,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Untree.co" />
-    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 
     <meta name="description" content="" />
     <meta name="keywords" content="bootstrap, bootstrap5" />
@@ -53,14 +53,14 @@
         <div class="menu-bg-wrap">
           <div class="site-navigation">
             <a href="index.html">
-              <img src="images/SamprapthiWO.png" alt="description_of_image" style="width:150px; height: 120px;">
+              <img src="images/SamprapthiWO.png" alt="description_of_image" style="width:120px; height: 120px;">
             </a>
 
             <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu ">
               <li><a href="index.html">Home</a></li>
-              <li class="has-children active">
+              <li class="active">
                 <a href="properties.html">Properties</a>
-                <ul class="dropdown">
+                <!-- <ul class="dropdown">
                   <li><a href="#" data-bs-toggle="modal" data-bs-target="#buyPropertyModal" class="fs-5">Buy Property</a></li>
 
                   <li><a href="#" data-bs-toggle="modal" data-bs-target="#sellPropertyModal" class="fs-5">Sell Property</a></li>
@@ -72,20 +72,21 @@
                       <li><a href="#">Sub Menu Three</a></li>
                     </ul>
                   </li>
-                </ul>
+                </ul> -->
               </li>
               <li><a href="services.html">Services</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="tel:+911234567890">+911234567890</a></li>
             </ul>
 
             <!-- modal -->
-            <div class="custom-modal" id="buyPropertyModal">
+            <!-- <div class="custom-modal" id="buyPropertyModal">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title py-3 fs-4">Buy Property</h5>
-                    <!-- <span class="btn-close" aria-label="Close">×</span> -->
+                 <span class="btn-close" aria-label="Close">×</span> 
                   </div>
                   
                   <div class="modal-body">
@@ -112,13 +113,13 @@
                 </div>
               </div>
             </div>
-            <!-- sell modal -->
+    
             <div class="custom-modal" id="sellPropertyModal">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <h5 class="modal-title py-3 fs-4">Sell Property</h5>
-                    <!-- <span class="btn-close" aria-label="Close">×</span> -->
+                <span class="btn-close" aria-label="Close">×</span>
                   </div>
                   
                   <div class="modal-body">
@@ -145,30 +146,8 @@
                 </div>
               </div>
             </div>
-             <!-- sell modal end  -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-  const trigger = document.querySelector('.trigger-modal');
-  const modal = document.getElementById('buyPropertyModal');
-  const closeBtn = document.querySelector('.btn-close');
+       sell modal end  -->
 
-  trigger.addEventListener('click', function (e) {
-    e.preventDefault();
-    modal.style.display = 'block';
-  });
-
-  closeBtn.addEventListener('click', function () {
-    modal.style.display = 'none';
-  });
-
-  window.addEventListener('click', function (e) {
-    if (e.target === modal) {
-      modal.style.display = 'none';
-    }
-  });
-});
-
-  </script>
              
             
 
@@ -194,6 +173,8 @@
         <div class="row justify-content-center align-items-center">
           <div class="col-lg-9 text-center mt-5">
             <h1 class="heading" data-aos="fade-up">Properties</h1>
+            <h6 class="fs-4 p-0 text-white heading">Experience the essence of refined living with Samprapthi—where your ideal home awaits.
+            </h6>
 
             <nav
               aria-label="breadcrumb"
@@ -230,17 +211,18 @@
               <div class="property-slider">
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                    <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50"
+                      <!-- <span class="d-block mb-2 text-black-50"
                         >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
+                      > -->
+                      <span class="city d-block mb-3">Jubilee Hills</span>
+                      <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
                           <span class="icon-bed me-2"></span>
@@ -250,13 +232,11 @@
                           <span class="icon-bath me-2"></span>
                           <span class="caption">2 baths</span>
                         </span>
-                      </div>
+                      </div> -->
 
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+                      <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                        See details
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -264,17 +244,18 @@
 
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                    <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50"
+                      <!-- <span class="d-block mb-2 text-black-50"
                         >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
+                      > -->
+                      <span class="city d-block mb-3">Jubilee Hills</span>
+                      <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
                           <span class="icon-bed me-2"></span>
@@ -284,13 +265,10 @@
                           <span class="icon-bath me-2"></span>
                           <span class="caption">2 baths</span>
                         </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+                      </div> -->
+                      <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                        See details
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -298,17 +276,18 @@
 
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
+                    <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50"
+                      <!-- <span class="d-block mb-2 text-black-50"
                         >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
+                      > -->
+                      <span class="city d-block mb-3">Jubilee Hills</span>
+                      <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
                           <span class="icon-bed me-2"></span>
@@ -318,13 +297,11 @@
                           <span class="icon-bath me-2"></span>
                           <span class="caption">2 baths</span>
                         </span>
-                      </div>
+                      </div> -->
 
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+                      <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                        See details
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -332,17 +309,18 @@
 
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
+                    <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50"
+                      <!-- <span class="d-block mb-2 text-black-50"
                         >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
+                      > -->
+                      <span class="city d-block mb-3">Jubilee Hills</span>
+                      <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
                           <span class="icon-bed me-2"></span>
@@ -352,13 +330,11 @@
                           <span class="icon-bath me-2"></span>
                           <span class="caption">2 baths</span>
                         </span>
-                      </div>
+                      </div> -->
 
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+                      <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                        See details
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -366,17 +342,18 @@
 
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
+                    <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50"
+                      <!-- <span class="d-block mb-2 text-black-50"
                         >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
+                      > -->
+                      <span class="city d-block mb-3">Jubilee Hills</span>
+                      <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
                           <span class="icon-bed me-2"></span>
@@ -386,13 +363,75 @@
                           <span class="icon-bath me-2"></span>
                           <span class="caption">2 baths</span>
                         </span>
-                      </div>
+                      </div> -->
 
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+                      <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                        See details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>2BHK , 3BHK</span></div>
+                    <div>
+                      <!-- <span class="d-block mb-2 text-black-50"
+                        >5232 California Fake, Ave. 21BC</span
+                      > -->
+                      <span class="city d-block mb-3">Jubilee Hills</span>
+                      <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baths</span>
+                        </span>
+                      </div> -->
+
+                      <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                        See details
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- .item -->
+                <div class="property-item">
+                  <a href="property-single.html" class="img">
+                    <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
+                  </a>
+
+                  <div class="property-content">
+                    <div class="price mb-2"><span>2BHK , 3BHK</span></div>
+                    <div>
+                      <!-- <span class="d-block mb-2 text-black-50"
+                        >5232 California Fake, Ave. 21BC</span
+                      > -->
+                      <span class="city d-block mb-3">Jubilee Hills</span>
+                      <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
+                      <div class="specs d-flex mb-4">
+                        <span class="d-block d-flex align-items-center me-3">
+                          <span class="icon-bed me-2"></span>
+                          <span class="caption">2 beds</span>
+                        </span>
+                        <span class="d-block d-flex align-items-center">
+                          <span class="icon-bath me-2"></span>
+                          <span class="caption">2 baths</span>
+                        </span>
+                      </div> -->
+
+                      <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                        See details
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -400,17 +439,18 @@
 
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
+                    <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50"
+                      <!-- <span class="d-block mb-2 text-black-50"
                         >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
+                      > -->
+                      <span class="city d-block mb-3">Jubilee Hills</span>
+                      <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
                           <span class="icon-bed me-2"></span>
@@ -420,13 +460,10 @@
                           <span class="icon-bath me-2"></span>
                           <span class="caption">2 baths</span>
                         </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+                      </div> -->
+                      <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                        See details
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -434,17 +471,18 @@
 
                 <div class="property-item">
                   <a href="property-single.html" class="img">
-                    <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
+                    <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
                   </a>
 
                   <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
+                    <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                     <div>
-                      <span class="d-block mb-2 text-black-50"
+                      <!-- <span class="d-block mb-2 text-black-50"
                         >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
+                      > -->
+                      <span class="city d-block mb-3">Jubilee Hills</span>
+                      <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                       <div class="specs d-flex mb-4">
                         <span class="d-block d-flex align-items-center me-3">
                           <span class="icon-bed me-2"></span>
@@ -454,81 +492,11 @@
                           <span class="icon-bath me-2"></span>
                           <span class="caption">2 baths</span>
                         </span>
-                      </div>
+                      </div> -->
 
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
-                    </div>
-                  </div>
-                </div>
-                <!-- .item -->
-
-                <div class="property-item">
-                  <a href="property-single.html" class="img">
-                    <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-                  </a>
-
-                  <div class="property-content">
-                    <div class="price mb-2"><span>$1,291,000</span></div>
-                    <div>
-                      <span class="d-block mb-2 text-black-50"
-                        >5232 California Fake, Ave. 21BC</span
-                      >
-                      <span class="city d-block mb-3">California, USA</span>
-
-                      <div class="specs d-flex mb-4">
-                        <span class="d-block d-flex align-items-center me-3">
-                          <span class="icon-bed me-2"></span>
-                          <span class="caption">2 beds</span>
-                        </span>
-                        <span class="d-block d-flex align-items-center">
-                          <span class="icon-bath me-2"></span>
-                          <span class="caption">2 baths</span>
-                        </span>
-                      </div>
-
-                      <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+                      <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                        See details
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -568,17 +536,18 @@
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
             <div class="property-item mb-30">
               <a href="property-single.html" class="img">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
               </a>
 
               <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
+                <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                 <div>
-                  <span class="d-block mb-2 text-black-50"
+                  <!-- <span class="d-block mb-2 text-black-50"
                     >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
+                  > -->
+                  <span class="city d-block mb-3">Jubilee Hills</span>
+                  <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                   <div class="specs d-flex mb-4">
                     <span class="d-block d-flex align-items-center me-3">
                       <span class="icon-bed me-2"></span>
@@ -588,32 +557,31 @@
                       <span class="icon-bath me-2"></span>
                       <span class="caption">2 baths</span>
                     </span>
-                  </div>
+                  </div> -->
 
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
+                  <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                    See details
+                  </a>
                 </div>
               </div>
             </div>
             <!-- .item -->
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
+            <div class="property-item">
               <a href="property-single.html" class="img">
-                <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
+                <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
               </a>
 
               <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
+                <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                 <div>
-                  <span class="d-block mb-2 text-black-50"
+                  <!-- <span class="d-block mb-2 text-black-50"
                     >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
+                  > -->
+                  <span class="city d-block mb-3">Jubilee Hills</span>
+                  <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                   <div class="specs d-flex mb-4">
                     <span class="d-block d-flex align-items-center me-3">
                       <span class="icon-bed me-2"></span>
@@ -623,32 +591,31 @@
                       <span class="icon-bath me-2"></span>
                       <span class="caption">2 baths</span>
                     </span>
-                  </div>
+                  </div> -->
 
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
+                  <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                    See details
+                  </a>
                 </div>
               </div>
             </div>
             <!-- .item -->
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
+            <div class="property-item">
               <a href="property-single.html" class="img">
-                <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
+                <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
               </a>
 
               <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
+                <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                 <div>
-                  <span class="d-block mb-2 text-black-50"
+                  <!-- <span class="d-block mb-2 text-black-50"
                     >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
+                  > -->
+                  <span class="city d-block mb-3">Jubilee Hills</span>
+                  <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                   <div class="specs d-flex mb-4">
                     <span class="d-block d-flex align-items-center me-3">
                       <span class="icon-bed me-2"></span>
@@ -658,119 +625,11 @@
                       <span class="icon-bath me-2"></span>
                       <span class="caption">2 baths</span>
                     </span>
-                  </div>
+                  </div> -->
 
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- .item -->
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="property-single.html" class="img">
-                <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
-              </a>
-
-              <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50"
-                    >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
-                  <div class="specs d-flex mb-4">
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bed me-2"></span>
-                      <span class="caption">2 beds</span>
-                    </span>
-                    <span class="d-block d-flex align-items-center">
-                      <span class="icon-bath me-2"></span>
-                      <span class="caption">2 baths</span>
-                    </span>
-                  </div>
-
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- .item -->
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="property-single.html" class="img">
-                <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
-              </a>
-
-              <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50"
-                    >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
-                  <div class="specs d-flex mb-4">
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bed me-2"></span>
-                      <span class="caption">2 beds</span>
-                    </span>
-                    <span class="d-block d-flex align-items-center">
-                      <span class="icon-bath me-2"></span>
-                      <span class="caption">2 baths</span>
-                    </span>
-                  </div>
-
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
-                </div>
-              </div>
-            </div>
-            <!-- .item -->
-          </div>
-          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
-              <a href="property-single.html" class="img">
-                <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
-              </a>
-
-              <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
-                <div>
-                  <span class="d-block mb-2 text-black-50"
-                    >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
-                  <div class="specs d-flex mb-4">
-                    <span class="d-block d-flex align-items-center me-3">
-                      <span class="icon-bed me-2"></span>
-                      <span class="caption">2 beds</span>
-                    </span>
-                    <span class="d-block d-flex align-items-center">
-                      <span class="icon-bath me-2"></span>
-                      <span class="caption">2 baths</span>
-                    </span>
-                  </div>
-
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
+                  <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                    See details
+                  </a>
                 </div>
               </div>
             </div>
@@ -778,19 +637,20 @@
           </div>
 
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
+            <div class="property-item">
               <a href="property-single.html" class="img">
-                <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
+                <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
               </a>
 
               <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
+                <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                 <div>
-                  <span class="d-block mb-2 text-black-50"
+                  <!-- <span class="d-block mb-2 text-black-50"
                     >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
+                  > -->
+                  <span class="city d-block mb-3">Jubilee Hills</span>
+                  <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                   <div class="specs d-flex mb-4">
                     <span class="d-block d-flex align-items-center me-3">
                       <span class="icon-bed me-2"></span>
@@ -800,32 +660,31 @@
                       <span class="icon-bath me-2"></span>
                       <span class="caption">2 baths</span>
                     </span>
-                  </div>
+                  </div> -->
 
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
+                  <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                    See details
+                  </a>
                 </div>
               </div>
             </div>
             <!-- .item -->
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
+            <div class="property-item">
               <a href="property-single.html" class="img">
-                <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
+                <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
               </a>
 
               <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
+                <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                 <div>
-                  <span class="d-block mb-2 text-black-50"
+                  <!-- <span class="d-block mb-2 text-black-50"
                     >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
+                  > -->
+                  <span class="city d-block mb-3">Jubilee Hills</span>
+                  <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                   <div class="specs d-flex mb-4">
                     <span class="d-block d-flex align-items-center me-3">
                       <span class="icon-bed me-2"></span>
@@ -835,32 +694,66 @@
                       <span class="icon-bath me-2"></span>
                       <span class="caption">2 baths</span>
                     </span>
-                  </div>
+                  </div> -->
 
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
+                  <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                    See details
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- .item -->
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item">
+              <a href="property-single.html" class="img">
+                <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
+              </a>
+
+              <div class="property-content">
+                <div class="price mb-2"><span>2BHK , 3BHK</span></div>
+                <div>
+                  <!-- <span class="d-block mb-2 text-black-50"
+                    >5232 California Fake, Ave. 21BC</span
+                  > -->
+                  <span class="city d-block mb-3">Jubilee Hills</span>
+                  <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span>
+                      <span class="caption">2 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span>
+                      <span class="caption">2 baths</span>
+                    </span>
+                  </div> -->
+
+                  <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                    See details
+                  </a>
                 </div>
               </div>
             </div>
             <!-- .item -->
           </div>
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
-            <div class="property-item mb-30">
+            <div class="property-item">
               <a href="property-single.html" class="img">
-                <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
+                <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
               </a>
 
               <div class="property-content">
-                <div class="price mb-2"><span>$1,291,000</span></div>
+                <div class="price mb-2"><span>2BHK , 3BHK</span></div>
                 <div>
-                  <span class="d-block mb-2 text-black-50"
+                  <!-- <span class="d-block mb-2 text-black-50"
                     >5232 California Fake, Ave. 21BC</span
-                  >
-                  <span class="city d-block mb-3">California, USA</span>
-
+                  > -->
+                  <span class="city d-block mb-3">Jubilee Hills</span>
+                  <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
                   <div class="specs d-flex mb-4">
                     <span class="d-block d-flex align-items-center me-3">
                       <span class="icon-bed me-2"></span>
@@ -870,13 +763,45 @@
                       <span class="icon-bath me-2"></span>
                       <span class="caption">2 baths</span>
                     </span>
-                  </div>
+                  </div> -->
 
-                  <a
-                    href="property-single.html"
-                    class="btn btn-primary py-2 px-3"
-                    >See details</a
-                  >
+                  <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                    See details
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- .item -->
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+            <div class="property-item">
+              <a href="property-single.html" class="img">
+                <img src="images/coming-soon-word-metallic-text-style.jpg" alt="Image" class="img-fluid" />
+              </a>
+
+              <div class="property-content">
+                <div class="price mb-2"><span>2BHK , 3BHK</span></div>
+                <div>
+                  <!-- <span class="d-block mb-2 text-black-50"
+                    >5232 California Fake, Ave. 21BC</span
+                  > -->
+                  <span class="city d-block mb-3">Jubilee Hills</span>
+                  <span class="city d-block mb-3">Coming Soon</span>
+<!-- 
+                  <div class="specs d-flex mb-4">
+                    <span class="d-block d-flex align-items-center me-3">
+                      <span class="icon-bed me-2"></span>
+                      <span class="caption">2 beds</span>
+                    </span>
+                    <span class="d-block d-flex align-items-center">
+                      <span class="icon-bath me-2"></span>
+                      <span class="caption">2 baths</span>
+                    </span>
+                  </div> -->
+
+                  <a href="assets/file.pdf" class="btn btn-primary py-2 px-3" target="_blank">
+                    See details
+                  </a>
                 </div>
               </div>
             </div>
@@ -904,71 +829,67 @@
           <div class="col-lg-4">
             <div class="widget">
               <h3>Contact</h3>
-              <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+              <address>3rd floor # 5-109/3/B/1, jubilee hills road, opp. J R C, Rai Durg, 500033</address>
               <ul class="list-unstyled links">
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-                <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+                <li><a href="tel://11234567890"></a>+911234567890</li>
+                <li><a href="tel://11234567890"></a>+911234567890</li>
                 <li>
-                  <a href="mailto:info@mydomain.com">info@mydomain.com</a>
+                  <a href="mailto:info@mydomain.com">www.email.com</a>
                 </li>
               </ul>
             </div>
             <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Sources</h3>
-              <ul class="list-unstyled float-start links">
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Vision</a></li>
-                <li><a href="#">Mission</a></li>
-                <li><a href="#">Terms</a></li>
-                <li><a href="#">Privacy</a></li>
-              </ul>
-              <ul class="list-unstyled float-start links">
-                <li><a href="#">Partners</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Careers</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Creative</a></li>
-              </ul>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <div class="widget">
+                <h3>Sources</h3>
+                <ul class="list-unstyled float-start links">
+                  <li><a href="properties.html">Properties</a></li>
+                  <li><a href="about">About us</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="about.html">Vision</a></li>
+                  <li><a href="about.html">Mission</a></li>
+                 
+                </ul>
+                <ul class="list-unstyled float-start links">
+                  <!-- <li><a href="#">Partners</a></li> -->
+                  <!-- <li><a href="#">Business</a></li> -->
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <!-- <li><a href="#">Creative</a></li> -->
+                </ul>
+              </div>
+              <!-- /.widget -->
             </div>
-            <!-- /.widget -->
-          </div>
-          <!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-            <div class="widget">
-              <h3>Links</h3>
-              <ul class="list-unstyled links">
-                <li><a href="#">Our Vision</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
-              </ul>
-
-              <ul class="list-unstyled social">
-                <li>
-                  <a href="#"><span class="icon-instagram"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-facebook"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-linkedin"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-pinterest"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="icon-dribbble"></span></a>
-                </li>
-              </ul>
-            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <div class="widget">
+                <h3>Links</h3>
+                <ul class="list-unstyled links">
+                  <li><a href="about.html">Our Vision</a></li>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                </ul>
+  
+                <ul class="list-unstyled social">
+                  <li>
+                    <a href="#"><span class="icon-instagram"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-twitter"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-facebook"></span></a>
+                  </li>
+                  <li>
+                    <a href="#"><span class="icon-linkedin"></span></a>
+                  </li>
+                
+                </ul>
+              </div>
             <!-- /.widget -->
           </div>
           <!-- /.col-lg-4 -->
@@ -977,26 +898,22 @@
 
         <div class="row mt-5">
           <div class="col-12 text-center">
-            <!-- 
-              **==========
-              NOTE: 
-              Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
-              **==========
-            -->
+          
 
-            <p>
+            <p>       <a href="https://vardhanworld.com/" target="_blank">VardanWorld</a>
               Copyright &copy;
               <script>
                 document.write(new Date().getFullYear());
               </script>
-              . All Rights Reserved. &mdash; Designed with love by
-              <a href="https://untree.co">Untree.co</a>
+              . All Rights Reserved.
+              <!-- . All Rights Reserved. &mdash; Designed with love by -->
+              <!-- <a href="https://untree.co">Untree.co</a> -->
               <!-- License information: https://untree.co/license/ -->
             </p>
-            <div>
+            <!-- <div>
               Distributed by
               <a href="https://themewagon.com/" target="_blank">themewagon</a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
