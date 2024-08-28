@@ -182,17 +182,24 @@
       </section>
       <div class="container mt-3 mb-5">
         <h2>Ready to Join Us?</h2>
-        <p>We are always looking for talented individuals to join our team. If you're interested, please submit your resume below.</p>
-        
+        <p>We are always looking for talented individuals to join our team. If you're interested, please <br>submit your resume below.</p>
+    
         <form id="resumeForm">
-            <div class="mb-3">
-                <label for="name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="name" required>
+          <div class="col-6">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
             </div>
             <div class="mb-3">
-              <label for="number" class="form-label">Phone Number</label>
-              <input type="number" class="form-control" id="name" required>
-          </div>
+                <label for="number" class="form-label">Phone Number</label>
+                <input type="number" class="form-control" id="number" required>
+            </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email address</label>
                 <input type="email" class="form-control" id="email" required>
@@ -203,7 +210,12 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        </div>
+        
+      
+      </div>
     </div>
+    
 
 <div class="site-footer">
     <div class="container">
