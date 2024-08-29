@@ -169,10 +169,9 @@
                   
                       <span class="city d-block mb-3">Kukatpally</span>
                       <span class="city d-block mb-3">Coming Soon</span>
-    
-    
-                      <a href="#" class="btn btn-primary py-2 px-3" target="_blank">
+                      <a href="#"  data-bs-toggle="modal" data-bs-target="#buyPropertyModal"  class="btn btn-primary py-2 px-3" target="_blank">
                         See details
+                      </a>
                       </a>
                     </div>
                   </div>
@@ -192,7 +191,7 @@
                       <span class="city d-block mb-3">Bachupally</span>
                       <span class="city d-block mb-3">Coming Soon</span>
     
-                      <a href="#" class="btn btn-primary py-2 px-3" target="_blank">
+                      <a href="#"  data-bs-toggle="modal" data-bs-target="#buyPropertyModal"  class="btn btn-primary py-2 px-3" target="_blank">
                         See details
                       </a>
                     </div>
@@ -298,7 +297,7 @@ document.getElementById('buyPropertyForm').addEventListener('submit', function(e
           </div>
       <div class="container">
         <div class="row">
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-delay="300">
             <div class="box-feature">
               <span class="flaticon-house"></span>
               <h3 class="mb-3">Our Properties</h3>
@@ -310,7 +309,7 @@ document.getElementById('buyPropertyForm').addEventListener('submit', function(e
               <p><a href="about.html" class="learn-more">Read More</a></p>
             </div>
           </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-delay="500">
             <div class="box-feature">
               <span class="flaticon-building"></span>
               <h3 class="mb-3">Property for Sale</h3>
@@ -320,7 +319,7 @@ document.getElementById('buyPropertyForm').addEventListener('submit', function(e
               <p><a href="properties.html" class="learn-more">Read More</a></p>
             </div>
           </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-delay="400">
             <div class="box-feature">
               <span class="flaticon-house-3"></span>
               <h3 class="mb-3">Smart Investment Solutions</h3>
@@ -330,7 +329,7 @@ document.getElementById('buyPropertyForm').addEventListener('submit', function(e
               <p><a href="contact.html" class="learn-more">Read More</a></p>
             </div>
           </div>
-          <div class="col-6 col-lg-3" data-aos="fade-up" data-aos-delay="600">
+          <div class="col-12 col-lg-3" data-aos="fade-up" data-aos-delay="600">
             <div class="box-feature">
               <span class="flaticon-house-1"></span>
               <h3 class="mb-3">House for Sale</h3>
@@ -521,14 +520,62 @@ document.getElementById('buyPropertyForm').addEventListener('submit', function(e
         <div class="col-lg-7 mx-auto text-center">
           <h2 class="mb-4">Find Your Perfect Home Today:Explore Our Latest Listings and Discover Your Dream Property</h2>
           <p>
-            <a
-              href="properties.html"
-              target="_blank"
-              class="btn btn-primary text-white py-3 px-4"
-              >Get a Quote</a
-            >
+            <a href="#" data-bs-toggle="modal" data-bs-target="#requestQuoteModal" class="btn btn-primary py-2 px-3">
+           Get a Quote
+            </a>
           </p>
+          <!-- <div class="modal fade" id="requestQuoteModal" tabindex="-1" aria-labelledby="requestQuoteModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable"> 
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title py-3 fs-4" id="requestQuoteModalLabel">Request a Quote</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form id="requestQuoteForm">
+                    <div class="form-group">
+                      <label for="firstName" class="fs-5">First Name</label>
+                      <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="lastName" class="fs-5">Last Name</label>
+                      <input type="text" class="form-control" id="lastName" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="emailQuote" class="fs-5">Email</label>
+                      <input type="email" class="form-control" id="emailQuote" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="phoneQuote" class="fs-5">Phone</label>
+                      <input type="text" class="form-control" id="phoneQuote" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="companyName" class="fs-5">Company Name</label>
+                      <input type="text" class="form-control" id="companyName">
+                    </div>
+                    <div class="form-group">
+                      <label for="serviceType" class="fs-5">Type of Service</label>
+                      <select class="form-control" id="serviceType" required>
+                        <option value="">Select a Service</option>
+                        <option value="consultation">Consultation</option>
+                        <option value="propertyManagement">Property Management</option>
+                        <option value="valuation">Valuation</option>
+                        <option value="others">Others</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="details" class="fs-5">Additional Details</label>
+                      <textarea class="form-control" id="details" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Request</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+         -->
+        
         <!-- /.col-lg-7 -->
       </div>
       <!-- /.row -->
@@ -658,7 +705,7 @@ document.getElementById('buyPropertyForm').addEventListener('submit', function(e
                 <li><a href="tel://11234567890"></a>+91 90009 12999</li>
                 <!-- <li><a href="tel://11234567890"></a>+911234567890</li> -->
                 <li>
-                  <a href="mailto:info@mydomain.com">www.email.com</a>
+                  <a href="mailto:info@mydomain.com">support@samprapthi.com</a>
                 </li>
               </ul>
             </div>
