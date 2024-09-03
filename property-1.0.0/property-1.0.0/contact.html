@@ -205,63 +205,93 @@
       </div>
     </div>
 <!-- footer -->
- 
-<div class="section">
-  <div class="row justify-content-center footer-cta" data-aos="fade-up">
+<div class="section ">
+  <div class="row justify-content-center footer-cta " data-aos="fade-up">
     <div class="col-lg-7 mx-auto text-center">
-      <h2 class="mb-4">Premier Residences Explore our handpicked properties that offer exceptional quality and luxurious living.</h2>
-      <p>
-        <a
-          href="#"
-          class="btn btn-primary text-white py-3 px-4"
-          data-bs-toggle="modal"
-          data-bs-target="#quoteModal"
-          >Get a Quote</a
-        >
+      <h2 class="">Premier Residences Explore our handpicked properties that offer exceptional quality and luxurious living.</h2>
+      
+      <p class="fs-4 text-center">Find Your Perfect Home Today</p>
+        <a href="#"  data-bs-toggle="modal" data-bs-target="#requestQuoteModal"  class="btn btn-primary py-2 px-3" target="_blank">
+        Get Quote
+        </a>
       </p>
-      <div
-  class="modal fade"
-  id="quoteModal"
-  tabindex="-1"
-  aria-labelledby="quoteModalLabel"
-  aria-hidden="true"
->
+  </div>
+</div>
+<div class="custom-modal" id="requestQuoteModal">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="quoteModalLabel">Get a Quote</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+        <h5 class="modal-title py-3 fs-4">Get a Quote</h5>
+ 
       </div>
       <div class="modal-body">
         <form id="quoteForm">
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required />
+          <div class="form-group">
+            <label for="name" class="fs-5">First Name</label>
+            <input type="text" class="form-control" id="name" required>
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" required />
+          <div class="form-group">
+            <label for="email" class="fs-5">Email</label>
+            <input type="email" class="form-control" id="email" required>
           </div>
-          <div class="mb-3">
-            <label for="details" class="form-label">Details</label>
-            <textarea class="form-control" id="details" rows="3" required></textarea>
+          <div class="form-group">
+            <label for="phone" class="fs-5">Phone</label>
+            <input type="text" class="form-control" id="phone" required>
+          </div>
+        
+          <div class="form-group">
+            <label for="location" class="fs-5">Location</label>
+            <select id="location" name="location" class="form-control" required>
+              <option value="" disabled selected>Select a location</option>
+              <option value="Banjara Hills">Banjara Hills</option>
+              <option value="Jubilee Hills">Jubilee Hills</option>
+              <option value="Gachibowli">Gachibowli</option>
+              <option value="Hitech City">Hitech City</option>
+              <option value="Madhapur">Madhapur</option>
+              <option value="Kondapur">Kondapur</option>
+              <option value="Begumpet">Begumpet</option>
+              <option value="Secunderabad">Secunderabad</option>
+              <option value="Kukatpally">Kukatpally</option>
+            </select>
+          </div>
+
+       
+
+
+          <div class="form-group">
+            <label for="Property" class="fs-5">Property Type</label>
+            <select id="propertyType" name="propertyType" class="form-control" required>
+              <option value="" disabled selected>Select a Property</option>
+              <option value="residential">2BHK Flat</option>
+              <option value="commercial">3BHK Flat</option>
+              <option value="industrial">4BHK Flat</option>
+              
+            </select>
+          </div>
+             <div class="form-group">
+            <label for="budget" class="fs-5">Budget Range </label>
+            <label for="budget" class="fs-5"></label>
+            <input type="number"  id="budget"  name="budget"class="form-control"  required>
+          </div>
+          <div class="form-group">
+            <label for="Property" class="fs-5">Contact Method</label>
+            <select id="contactMethod" name="contactMethod" class="form-control" required>
+              <option value="" disabled selected>Preferred </option>
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+              
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label for="message" class="fs-5">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
     </div>
   </div>
-</div>
-
-    </div>
-    <!-- /.col-lg-7 -->
-  </div>
-  <!-- /.row -->
 </div>
 
     <div class="site-footer">
@@ -317,12 +347,7 @@
           <div class="col-lg-4">
             <div class="widget">
               <h3>Links</h3>
-              <!-- <ul class="list-unstyled links">
-                <li><a href="about.html">Our Vision</a></li>
-                <li><a href="about.html">About us</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-              </ul> -->
-
+         
               <ul class="list-unstyled social">
                 <li>
                   <a href=" https://www.instagram.com/samprapthi_properties/" target="_blank"><span class="icon-instagram"></span></a>

@@ -342,7 +342,157 @@ document.getElementById('buyPropertyForm').addEventListener('submit', function(e
         </div>
       </div>
     </section>
+<!-- sucess action -->
+<div class="container">
+  <div class="row mb-5 align-items-center pt-5">
+    <div class="col-lg-12">
+      <h2 class="font-weight-bold text-primary heading text-center">
+        Achieving Success: From Process to Project
+      </h2>
+      <p class="text-center fs-4">Pathway to Your Dream Home </p>
+    </div>
+    </div>
+      <!-- Row of 12 Images -->
+  <div class="row">
+    <!-- Repeat this for each image -->
+    <div class="col">
+      <img src="images/Make It Yours.png" class="img-fluid" alt="Image 1">
+    </div>
+    <div class="col text-center d-flex align-items-center justify-content-center">
+      <img src="images/right-arrow.png" class="img-fluid" alt="Image 3">
+    </div>
+    
+    <div class="col">
+      <img src="images/Experience the Property.png" class="img-fluid" alt="Image 3">
+    </div>
+    <div class="col text-center d-flex align-items-center justify-content-center">
+      <img src="images/right-arrow.png" class="img-fluid" alt="Image 3">
+    </div>
+    <div class="col">
+      <img src="images/Explore Our Properties.png" class="img-fluid" alt="Image 5">
+    </div>
+    <div class="col text-center d-flex align-items-center justify-content-center">
+      <img src="images/right-arrow.png" class="img-fluid" alt="Image 3">
+    </div>
+    <div class="col">
+      <img src="images/Continued Support.png" class="img-fluid" alt="Image 7">
+    </div>
+    <div class="col text-center d-flex align-items-center justify-content-center">
+      <img src="images/right-arrow.png" class="img-fluid" alt="Image 3">
+    </div>
+    <div class="col">
+      <img src="images/Simplify Financing.png" class="img-fluid" alt="Image 9">
+    </div>
+    <div class="col text-center d-flex align-items-center justify-content-center">
+      <img src="images/right-arrow.png" class="img-fluid" alt="Image 3">
+    </div>
+    <div class="col">
+      <img src="images/Connect with Us.png" class="img-fluid" alt="Image 11">
+    </div>
+    <!-- <div class="col">
+      <img src="" class="img-fluid" alt="Image 12">
+    </div> -->
+  </div>
+</div>
+  </div>
+  
+ <!-- end -->
+  <!-- CTA -->
+  <div class="section">
+    <div class="row justify-content-center footer-cta" data-aos="fade-up">
+      <div class="col-lg-7 mx-auto text-center">
+        <h2 class="">Find Your Perfect Home Today</h2>
+        <p class="fs-4 text-center">Explore Our Latest Listings and Discover Your Dream Property</p>
+        <p>
+          <a href="#"  data-bs-toggle="modal" data-bs-target="#requestQuoteModal"  class="btn btn-primary py-2 px-3" target="_blank">
+          Get Quote
+          </a>
 
+        </p>
+    
+      
+
+    </div>
+
+  </div>
+  <div class="custom-modal" id="requestQuoteModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title py-3 fs-4">Get a Quote</h5>
+   
+        </div>
+        <div class="modal-body">
+          <form id="quoteForm">
+            <div class="form-group">
+              <label for="name" class="fs-5">First Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email" class="fs-5">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="fs-5">Phone</label>
+              <input type="text" class="form-control" id="phone" required>
+            </div>
+          
+            <div class="form-group">
+              <label for="location" class="fs-5">Location</label>
+              <select id="location" name="location" class="form-control" required>
+                <option value="" disabled selected>Select a location</option>
+                <option value="Banjara Hills">Banjara Hills</option>
+                <option value="Jubilee Hills">Jubilee Hills</option>
+                <option value="Gachibowli">Gachibowli</option>
+                <option value="Hitech City">Hitech City</option>
+                <option value="Madhapur">Madhapur</option>
+                <option value="Kondapur">Kondapur</option>
+                <option value="Begumpet">Begumpet</option>
+                <option value="Secunderabad">Secunderabad</option>
+                <option value="Kukatpally">Kukatpally</option>
+              </select>
+            </div>
+
+         
+
+
+            <div class="form-group">
+              <label for="Property" class="fs-5">Property Type</label>
+              <select id="propertyType" name="propertyType" class="form-control" required>
+                <option value="" disabled selected>Select a Property</option>
+                <option value="residential">2BHK Flat</option>
+                <option value="commercial">3BHK Flat</option>
+                <option value="industrial">4BHK Flat</option>
+                
+              </select>
+            </div>
+               <div class="form-group">
+              <label for="budget" class="fs-5">Budget Range </label>
+              <label for="budget" class="fs-5"></label>
+              <input type="number"  id="budget"  name="budget"class="form-control"  required>
+            </div>
+            <div class="form-group">
+              <label for="Property" class="fs-5">Contact Method</label>
+              <select id="contactMethod" name="contactMethod" class="form-control" required>
+                <option value="" disabled selected>Preferred </option>
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                
+              </select>
+            </div>
+      
+            <div class="form-group">
+              <label for="message" class="fs-5">Message</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!-- Cta End -->
     <div class="section sec-testimonials">
       <div class="container">
         <div class="row mb-5 align-items-center">
@@ -515,71 +665,7 @@ document.getElementById('buyPropertyForm').addEventListener('submit', function(e
 
    
 
-    <div class="section">
-      <div class="row justify-content-center footer-cta" data-aos="fade-up">
-        <div class="col-lg-7 mx-auto text-center">
-          <h2 class="mb-4">Find Your Perfect Home Today:Explore Our Latest Listings and Discover Your Dream Property</h2>
-          <p>
-            <a href="#" data-bs-toggle="modal" data-bs-target="#requestQuoteModal" class="btn btn-primary py-2 px-3">
-           Get a Quote
-            </a>
-          </p>
-          <!-- <div class="modal fade" id="requestQuoteModal" tabindex="-1" aria-labelledby="requestQuoteModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-scrollable"> 
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title py-3 fs-4" id="requestQuoteModalLabel">Request a Quote</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <form id="requestQuoteForm">
-                    <div class="form-group">
-                      <label for="firstName" class="fs-5">First Name</label>
-                      <input type="text" class="form-control" id="firstName" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="lastName" class="fs-5">Last Name</label>
-                      <input type="text" class="form-control" id="lastName" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="emailQuote" class="fs-5">Email</label>
-                      <input type="email" class="form-control" id="emailQuote" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="phoneQuote" class="fs-5">Phone</label>
-                      <input type="text" class="form-control" id="phoneQuote" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="companyName" class="fs-5">Company Name</label>
-                      <input type="text" class="form-control" id="companyName">
-                    </div>
-                    <div class="form-group">
-                      <label for="serviceType" class="fs-5">Type of Service</label>
-                      <select class="form-control" id="serviceType" required>
-                        <option value="">Select a Service</option>
-                        <option value="consultation">Consultation</option>
-                        <option value="propertyManagement">Property Management</option>
-                        <option value="valuation">Valuation</option>
-                        <option value="others">Others</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="details" class="fs-5">Additional Details</label>
-                      <textarea class="form-control" id="details" rows="3"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit Request</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-         -->
-        
-        <!-- /.col-lg-7 -->
-      </div>
-      <!-- /.row -->
-    </div>
+    
 
     <div class="section section-5 bg-light">
       <div class="container">
@@ -610,7 +696,7 @@ document.getElementById('buyPropertyForm').addEventListener('submit', function(e
                     <h2 class="mb-0">
                       <a href="https://www.linkedin.com/in/harsha-vardhan-jain-18594461/" target="_blank">Harshavardhan Jain</a>
                   </h2>
-                  <!-- <p class="text-black-50">Director</p> -->
+                  <p class="text-black-50">Director</p>
                     <p class="card-text">A dynamic entrepreneur and business consultant, Harshavardhan Jain is passionate about driving growth and innovation. With extensive experience in sales strategy, startup mentorship, and brand development, he brings a wealth of knowledge to the real estate industry. Whether it's guiding budding entrepreneurs or crafting compelling content strategies, Harshavardhan is dedicated to delivering results and inspiring success.</p>
                     <div class="d-flex justify-content-between align-items-center">
                       <h2 class="fs-4"> To Know More</h2>
