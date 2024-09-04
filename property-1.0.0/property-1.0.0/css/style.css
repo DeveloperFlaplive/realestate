@@ -9490,7 +9490,7 @@ textarea.form-control-lg {
 .burger:after {
   top: 26px; }
 
-/* Hover */
+
 .burger:hover:before {
   top: 7px; }
 
@@ -9508,13 +9508,13 @@ textarea.form-control-lg {
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=5);
-  /*for IE*/ }
+   }
 
 .burger.active:after {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=-5);
-  /*for IE*/ }
+ }
 
 .burger:focus {
   outline: none; }
