@@ -9785,7 +9785,7 @@ textarea {
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    /* bottom: 40px; */
+    bottom: 40px;
     z-index: 2; }
     .property-slider-wrap .tns-nav button, .img-property-slide-wrap .tns-nav button {
       background: none;
