@@ -155,10 +155,13 @@
                       </div> -->
 
                       <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+                      href="#"
+                      class="btn btn-primary py-2 px-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#buyPropertyModal"
+                    >
+                      See details
+                    </a>
                     </div>
                   </div>
                 </div>
@@ -190,10 +193,13 @@
                       </div> -->
 
                       <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+                      href="#"
+                      class="btn btn-primary py-2 px-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#buyPropertyModal"
+                    >
+                      See details
+                    </a>
                     </div>
                   </div>
                 </div>
@@ -225,10 +231,13 @@
                       </div> -->
 
                       <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+  href="#"
+  class="btn btn-primary py-2 px-3"
+  data-bs-toggle="modal"
+  data-bs-target="#buyPropertyModal"
+>
+  See details
+</a>
                     </div>
                   </div>
                 </div>
@@ -260,10 +269,13 @@
                       </div> -->
 
                       <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+                      href="#"
+                      class="btn btn-primary py-2 px-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#buyPropertyModal"
+                    >
+                      See details
+                    </a>
                     </div>
                   </div>
                 </div>
@@ -295,10 +307,13 @@
                       </div> -->
 
                       <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+  href="#"
+  class="btn btn-primary py-2 px-3"
+  data-bs-toggle="modal"
+  data-bs-target="#buyPropertyModal"
+>
+  See details
+</a>
                     </div>
                   </div>
                 </div>
@@ -330,15 +345,71 @@
                       </div> -->
 
                       <a
-                        href="property-single.html"
-                        class="btn btn-primary py-2 px-3"
-                        >See details</a
-                      >
+                      href="#"
+                      class="btn btn-primary py-2 px-3"
+                      data-bs-toggle="modal"
+                      data-bs-target="#buyPropertyModal"
+                    >
+                      See details
+                    </a>
                     </div>
                   </div>
                 </div>
               </div>
+<!-- modal and Script -->
+<div class="custom-modal modal fade" id="buyPropertyModal" tabindex="-1" aria-labelledby="buyPropertyModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title py-3 fs-4" id="buyPropertyModalLabel">Buy Property</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="buyPropertyForm">
+          <div class="form-group">
+            <label for="name" class="fs-5">First Name</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email" class="fs-5">Email</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone" class="fs-5">Phone</label>
+            <input type="text" class="form-control" id="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="message" class="fs-5">Message</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!-- JavaScript for form validation and PDF display -->
+<script>
+document.getElementById('buyPropertyForm').addEventListener('submit', function(e) {
+  e.preventDefault(); 
+
+ 
+  const name = document.getElementById('name').value;
+  const email = document.getElementById('email').value;
+  const phone = document.getElementById('phone').value;
+  const message = document.getElementById('message').value;
+
+ 
+  if (name && email && phone && message) {
+  
+    window.open('assets/northeast.pdf', '_blank');
+  } else {
+    alert('Please fill all the fields.');
+  }
+});
+</script>
+ <!-- modal and script end -->
               <div
                 id="property-nav"
                 class="controls"
